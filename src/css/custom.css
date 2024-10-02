@@ -1,0 +1,112 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #4659fe;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  --ifm-color-primary: #8eaaff;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-background-color: #081556 !important;
+  --ifm-navbar-background-color: #081556 !important;
+}
+
+.navbar {
+  /* background-color: #081556; */
+  /* box-shadow: 0 0 0px 0px #081556; */
+}
+
+.navbar__item {
+  display: none;
+}
+
+.navbar-sidebar__back {
+  display: none;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.navbar__logo img {
+  padding: 5px 0;
+}
+
+.wrap {
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.navbar {
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .row {
+  flex: 1;
+}
+
+.container .row .col,
+.container .row .col > * {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.container .row .col article {
+  flex: 1;
+}
+
+.footer {
+  position: relative;
+  z-index: 2;
+}
+
+.wrap .markdown:after {
+  content: var(--data);
+  position: relative;
+  display: block;
+  padding-top: 20px;
+  font-size: 14px;
+  opacity: 0.75;
+  font-weight: 600;
+}
+
+.theme-doc-sidebar-item-category-level-1 {
+  margin-top: 20px !important;
+}
+
+.theme-doc-sidebar-item-category-level-1:first-child {
+  margin-top: 10px !important;
+}
+
+.theme-doc-sidebar-item-category-level-1 > .menu__list-item-collapsible {
+  margin-bottom: 10px !important;
+}
