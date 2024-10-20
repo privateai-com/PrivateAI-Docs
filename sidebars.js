@@ -65,7 +65,7 @@ const sidebars = {
         "ecosystem/psn-nodes",
         "ecosystem/initial-bonus-system-implementation",
         "ecosystem/anti-plagiarism",
-        "ecosystem/privateai-treasury",
+        "ecosystem/privateai-pgpt",
         "ecosystem/staking",
         "ecosystem/subscription-plans",
       ],
